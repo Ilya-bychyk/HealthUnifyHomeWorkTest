@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class HealthHomeWork {
 
-        WebDriver driver;
+    public WebDriver driver;
 
     @Test
     public void verifyWeight1Test() {
@@ -22,6 +22,7 @@ public class HealthHomeWork {
         String text = driver.findElement(By.xpath("//input[@name='desc']")).getAttribute("value");
         Assert.assertEquals(text, "Your category is Underweight");
     }
+
     @Test
     public void verifyWeight2Test() {
         driver = new ChromeDriver();
@@ -32,6 +33,7 @@ public class HealthHomeWork {
         String text = driver.findElement(By.xpath("//input[@name='desc']")).getAttribute("value");
         Assert.assertEquals(text, "Your category is Normal");
     }
+
     @Test
     public void verifyWeight3Test() {
         driver = new ChromeDriver();
@@ -42,6 +44,7 @@ public class HealthHomeWork {
         String text = driver.findElement(By.xpath("//input[@name='desc']")).getAttribute("value");
         Assert.assertEquals(text, "Your category is Obese");
     }
+
     @Test
     public void verifyWeight4Test() {
         driver = new ChromeDriver();
